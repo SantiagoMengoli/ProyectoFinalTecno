@@ -1,0 +1,251 @@
+
+$colorParrafos:rgba(0, 128, 0, 0.479);
+$colorMain: rgba(228, 227, 227, 0.925);
+$colorFuenteTitulos: rgb(0, 128, 0);
+$colorFuente: black;
+$colorGrisOscuro: rgba(61, 59, 59, 0.363);
+
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+@media only screen and (max-width:800px) {
+    /* Tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:300px) {
+    /* Celulares: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+footer{ 
+    margin-top: -50px;
+    background-color:rgba(128, 128, 128, 0.801) ;
+    .contacto--footer{
+        font-size: 20px;
+        word-spacing: 20px;
+        text-align: center;
+            ul{
+                margin-bottom: -4px;
+               li{
+                display: inline-block;
+                word-spacing: 5px;
+                margin: 25px;
+                }
+            }
+    }
+}
+.marcaRegistrada--footer p{
+    background-color: rgba(0, 128, 0, 0.479);
+    margin-bottom: -16px;
+}
+.textoCentro--quienesSomos{
+    display: flex;
+    width: 1000px;
+    margin: 25px 0px 50px 180px;
+    background-color:$colorParrafos;
+    font-size: 25px;
+    text-align: center;
+
+}
+.sectorContacto{
+    display: block;
+    width: 350px;
+    margin: 0px 50px 50px 500px;
+    font-size: 20px;
+            .form-group{
+                display: inline;
+                width: 750px;  
+            #botones{
+            display: block;
+            width: 1000px;
+            }
+            .comment{
+            display: block
+            }
+            .custom-control custom-checkbox{
+            display: inline;
+             width: 650px;
+            }
+            .custom-control-label{
+             width: 350px;
+            }     
+            .sectorContacto--comentario{
+                display: block;
+                height: 150px;
+            }          
+}
+}
+section{  
+    .textoCentro--servicios{
+        p{
+        font-size: 25px;
+        background-color: $colorParrafos;
+        }   
+        h3{
+        font-size: 30px;
+        color:$colorFuenteTitulos;
+        text-decoration: underline;
+        }
+        
+    }
+}
+.textoCentro--inicio{
+    text-align: center;
+    font-size: 25px;
+    margin-left:120px;
+    .container{
+        margin: 50px 0 50px 0;
+        align-items: center;
+
+        .col-lg-6{
+            justify-content: center;
+            p{ 
+                width: 500px;
+                height: 250px;
+                background-color:$colorParrafos;
+                margin-left:21px;
+            } 
+        }
+            .titulo--manejo {
+                font-size: 25px;
+                color: $colorFuenteTitulos;
+                text-decoration: underline;
+                text-align: center;
+            }
+            .titulo--fronteras{
+                font-size: 25px;
+                color: $colorFuenteTitulos;
+                text-decoration: underline;
+                text-align: center;
+
+                .foto--fronteras{   
+                    margin-left: 50px;
+                    margin-top: 25px;
+                }
+            }
+ 
+    } 
+}
+#presentacion--empresa{
+    p{
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 35px;
+        text-align: center;
+        background-color:$colorParrafos; 
+    
+        p:hover{
+            background-color: rgb(21, 226, 21);
+        }
+    }
+}
+.grid{
+    padding-bottom: 25px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 30px 30px 30px;
+    grid-template-areas: "Servicio Duración Aplicación" "Desratización 20Min Pegamento" "Desinsectación 15Min Pulverización";
+    margin: 50px;
+        div{
+            border: 2px solid $colorFuente;
+            text-align: center;
+            background-color: $colorParrafos;
+}
+        .a{grid-area: Servicio; font-weight: bold;}
+        .b{grid-area: Duración;font-weight: bold;}
+        .c{grid-area: Aplicación;font-weight: bold;}
+        .d{grid-area: Desratización;}
+        .e{grid-area: 20Min;}
+        .f{grid-area: Pegamento;}
+        .g{grid-area: Desinsectación;}
+        .h{grid-area: 15Min;}
+        .i{grid-area: Pulverización;}
+}
+.menuPrincipal--header{
+    word-spacing: 50px;
+    list-style-type: none;
+    border-width: 2.5px;
+    border-style: solid; 
+    background-color: $colorGrisOscuro;
+    height: 47px;
+    text-align: center;
+        ul{  
+            li{
+                display: inline-block;
+                a{
+                    font-size: 25px;
+                    text-decoration: none;
+                    word-spacing: 4px;
+                    color: $colorFuente;
+                    a:hover{
+                        color: blue;
+                    }
+                }
+            }
+        }
+}
+
+.header--principalIndex {
+    background-image: url(../img/mundo1.jpg);
+    background-size: cover;
+    height: 200px; }
+    .header--principalIndex .tituloPrincipal {
+      color: #1ce41c;
+      text-shadow: -2px -2px 1px black;
+      background-color: rgba(128, 128, 128, 0.503);
+      text-decoration: underline;
+      font-size: 90px;
+      height: 200px;
+      padding-top: 40px;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold; }
+main{
+    padding-bottom: 25px;
+    display: block;
+    background-color: rgba(228, 227, 227, 0.925);
+    font-family:'Raleway';
+
+        h2{
+            text-decoration: underline;
+            color: rgb(0, 128, 0);
+            text-align: center;
+            font-size: 35px;
+            padding:30px 0 30px 0;
+            animation-duration: 5s;
+            animation-name: aparecerTitulo ;
+        }
+    }
+    @keyframes aparecerTitulo{
+        0% {
+            opacity: 0 ;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    main h2:hover{
+        color: black;
+    }
+    
+.row{
+    padding-bottom: 30px;
+}
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+body{
+    background-color:rgba(228, 227, 227, 0.925) ;
+}
